@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h2>Cupcakes List</h2>
+    <ul class="cupcakes-list">
+
+    </ul>
+    <form action="" class="add-form">
+        <input type="text" id='flavor' name='flavor' required placeholder='Enter a flavor'>
+        <input type="text" id='size' name='size' required placeholder='Enter a size'>
+        <input type="text" id='rating' name='rating' required placeholder='Enter a rating'>
+        <input type="text" id='image' name='image' placeholder='Enter an image url'>
+        <button>Add</button>
+    </form>
+    <form action="" class='search-form'>
+        <input type="search" id='search' name='search' placeholder='Search here...'>
+        
+    </form>
+    <h2>Search Results</h2>
+    <ul class='search-results'></ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type='module' src='/static/app.js'></script>
+</body>
+</html>
